@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Savoy Hotel | Wellington, New Zealand</title>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+  <!--[if IE]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<div id="container">
+ <header>
+
+  <nav>
+
+    <div id="social-media">
+      <a href="https://www.twitter.com/"><img src="./css/icons/twitter.png"</a>
+      <a href="https://www.facebook.com/"><img src="./css/icons/facebook.png"</a>
+    </div>
+
+    <div id="logo">  
+     <img src="./css/logo-white2.png" alt="logo of Savoy Hotels">
+    </div>
+    <ul>
+      <li><a href="./index.html">HOME</a></li>
+      <li><a href="./rooms.html">ROOMS</a></li>
+      <li class="con-nav"><a href="./conference.html">CONFERENCE ROOMS</a></li>
+      <li><a href="./contact.html">CONTACT US</a></li>
+    </ul>
+  </nav>
+  
+    <p class="page-title">
+      Booking Form
+    </p>
+
+  </header>
+  <main class="clearfix">
+
+
+ <div id="form">   
+  <h2>Booking Form</h2>
+
+  <form novalidate id="booking-form">
+ 
+  <div id="check-dates">
+    <div>
+      <h3>CHECK OUT</h3>
+      <label for="checkin-day">Day: </label>
+      <select id="checkin-day">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+        <option>31</option>
+      </select>
+
+      <label for="checkin-month">Month: </label>
+      <select id="checkin-month">
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+      </select>
+
+      <label for="checkin-year">Year: </label>
+      <select id="checkin-year">
+        <option>2015</option>
+        <option>2016</option>
+        <option>2017</option>
+        <option>2018</option>
+      </select>
+
+      <span id="checkin-message"></span>
+    </div>
+
+      <div>
+        <h3>CHECK OUT</h3>
+        <label for="checkout-day">Day: </label>
+        <select id="checkout-day">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+          <option>16</option>
+          <option>17</option>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+          <option>21</option>
+          <option>22</option>
+          <option>23</option>
+          <option>24</option>
+          <option>25</option>
+          <option>26</option>
+          <option>27</option>
+          <option>28</option>
+          <option>29</option>
+          <option>30</option>
+          <option>31</option>
+        </select>
+
+        <label for="checkout-month">Month: </label>
+        <select id="checkout-month">
+          <option value="1">January</option>
+          <option value="2">February</option>
+          <option value="3">March</option>
+          <option value="4">April</option>
+          <option value="5">May</option>
+          <option value="6">June</option>
+          <option value="7">July</option>
+          <option value="8">August</option>
+          <option value="9">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+    
+        
+      <label for="checkout-year">Year: </label>
+      <select id="checkout-year">
+        <option>2015</option>
+        <option>2016</option>
+        <option>2017</option>
+        <option>2018</option>
+      </select><br><br>
+    </div>
+
+  </div>
+
+  <div id="customer-info">
+    <div>
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" placeholder="John">
+      <span id="firstname-message"></span>
+    </div>
+
+    <div>
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" placeholder="Smith">
+      <span id="lastname-message"></span>
+    </div>
+
+    <div>
+      <label>Age:</label>
+      <input type="number" id="age">
+    </div>
+
+    <div>
+      <input type="radio" name="gender" value="male" id="gender-male">
+      <label for="gender-male">Male</label>
+    </div>
+    
+    <div>
+      <input type="radio" name="gender" value="female" id="gender-female">
+      <label for="gender-female">Female</label>
+    </div>
+    
+    <div>
+      <input type="radio" name="gender" value="other" id="gender-other">
+      <label for="gender-other">Other</label>
+      <span id="gender-message"></span>
+    </div>
+
+     <div id="people">
+      <label for="adults">Adults</label>
+      <select id="adults">
+        <option></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <label for="children">Children</label>
+      <select id="children">
+        <option></option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="example@email.com">
+      <span id="email-message"></span>
+    </div>
+
+    <div>  
+      <label for="phone">Phone Number:</label>
+      <input type="tel" name="phone-number" placeholder="+64 123 678" id="phone">
+      <span id="phone-message"></span>
+    </div>
+
+    <div id="checkbox">
+      <label for="terms-and-conditions">Agree to terms &amp; conditions: </label>
+      <input type="checkbox" id="terms-and-conditions">
+      <span id="terms-message"></span>
+    </div>
+
+    <input type="submit" value="Book your room" id="submit">
+  </div>
+
+    
+      
+  </form>
+ </div>
+    
+
+ 
+  </main>
+
+  <footer class="clearfix">
+    <div>
+      <p id="copyright">Copyright &copy; 2015 Savoy Hotels Inc.</p>
+
+      <nav>
+        <a href="#">TERMS OF USE   |</a>
+        <a href="#">SITE MAP  |</a>
+        <a href="#">CONTACT US</a>
+      </nav>
+    </div>
+  </footer>
+
+</div>
+
+  <script src="js/useful-functions.js"></script>
+  <script src="js/booking-form.js"></script>
+
+
+</body>
+</html>
