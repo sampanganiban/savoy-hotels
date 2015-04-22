@@ -43,11 +43,11 @@ function validateRadioButtons( radioButtonsToCheck ) {
 }
 
 // Function to check if the First Name is valid 
-function validateFirstNameInput (firstNameInput) {
-	var firstNamePattern = /^[a-zA-Z']+$/;
+function validateName (nameInput) {
+	var namePattern = /^[A-Z][a-z']+$/;
 	// If the pattern is wrong
-	if(firstNamePattern.test( firstNameInput ) == false ){
-		// First name is not correct
+	if(namePattern.test( nameInput ) == false ){
+		// Not a proper first name
 		return false;
 	} else{
 		// First name is correct
@@ -55,6 +55,17 @@ function validateFirstNameInput (firstNameInput) {
 	}
 }
 
+// Function to check if a phone number is valid
+function validatePhone(phoneInput) {
+	var phonePattern = /^\+[1-9]{2}[ -.]?[1-9]{3}[ -.]?[1-9]{3}$/;
+	// If the pattern is wrong
+	if(phonePattern.test (phoneInput) == false){
+		// Not a proper number
+		return false;
+	} else
+		// Number is correct
+		return true; 
+}
 
 
 
