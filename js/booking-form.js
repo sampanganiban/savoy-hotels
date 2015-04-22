@@ -3,13 +3,13 @@ var form = document.getElementById ('booking-form');
 
 
 // Find the form elements
-var firstNameInput = document.getElementById('first-name');
-var firstNameMessage = document.getElementById('firstname-message');
-var lastNameMessage = document.getElementById('lastname-message');
-var lastNameInput  = document.getElementById('last-name');
-var ageInput		  = document.getElementById('age');
+var firstNameInput     = document.getElementById('first-name');
+var firstNameMessage   = document.getElementById('firstname-message');
+var lastNameMessage    = document.getElementById('lastname-message');
+var lastNameInput      = document.getElementById('last-name');
+var ageInput		   = document.getElementById('age');
 var termsAndConditions = document.getElementById ('terms-and-conditions');
-var termsMessage = document.getElementById('terms-message');
+var termsMessage       = document.getElementById('terms-message');
 
 
 // Find elements for Checkin/out dates
@@ -24,17 +24,25 @@ var checkoutMessage = document.getElementById('checkout-message');
 
 
 // Find radio buttons
-var genderRadios = document.getElementById('gender');
+var genderRadios  = document.getElementById('gender');
 var genderMessage = document.getElementById('gender-message');
 
 // onblur function for customers first name and last name
 firstNameInput.onblur = function() {
-	
+	if(firstNameInput.value == 0 ){
+		firstNameMessage.innerHTML = 'You must add a first name.';
+	} else if (validateFirstNameInput == true){
+		
+	}
 }
 
-var formIsValid = true;
 
-if( checkinYear.value == checkoutYear.value ) {
+
+form.onsubmit = function(){
+
+	var formIsValid = true;
+
+	if( checkinYear.value == checkoutYear.value ) {
 		if( checkinMonth.value == checkoutMonth.value ) {
 			if( checkinDay.value <= checkoutDay.value ) {
 				checkoutMessage.innerHTML 	= '';
@@ -58,6 +66,8 @@ if( checkinYear.value == checkoutYear.value ) {
 		checkinMessage.innerHTML 	= '';
 	}
 
+	return formIsValid;
+}
 
 
 
