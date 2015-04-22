@@ -42,6 +42,19 @@ function validateRadioButtons( radioButtonsToCheck ) {
 	return found;
 }
 
+// Function to check if the First Name is valid 
+function validateFirstNameInput (firstNameInput) {
+	var firstNamePattern = /^[a-zA-Z']+$/;
+	// If the pattern is wrong
+	if(firstNamePattern.test( firstNameInput ) == false ){
+		// First name is not correct
+		return false;
+	} else{
+		// First name is correct
+		return true;
+	}
+}
+
 
 
 
