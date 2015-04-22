@@ -36,13 +36,11 @@ header{
 	clear:both;
 }
 
-
-
 #logo{
 	position:absolute;
 	display:inline;
 	margin-left:40px;
-	margin-top:15px;
+	margin-top:20px;
 }
 
 header nav{
@@ -233,11 +231,6 @@ footer #copyright{
 	width:1400px;
 }
 
-/*#rooms-par div{
-	margin-top:-43px;
-	margin-bottom: 20px;
-}*/
-
 #rooms-par div a{
 	margin-left:1250px;
 }
@@ -250,6 +243,9 @@ footer #copyright{
 	/*border:1px solid #fff;*/
 	margin:7px 0px 7px 0px;
 	padding:0;
+	padding-top: 5px;
+	margin-top:1px;
+	border-top:12px solid #c92c39;
 }
 
 #rooms-par a,
@@ -288,7 +284,7 @@ footer #copyright{
 .article1,
 .article2,
 .article3{
-	border-top:10px solid #c92c39;
+	/*border-top:10px solid #c92c39;*/
 	width:466.5px;
 	float:left;
 	background-color: #171821;
@@ -324,7 +320,6 @@ footer #copyright{
 }
 
 /*CONFERENCE ROOMS PAGE*/
-
 #con-par{
 	padding:30px;
 	width:1400px;
@@ -341,13 +336,12 @@ footer #copyright{
 }
 
 /*CONTACT PAGE*/
-
-
 #contact{
 	margin:30px;
 	/*border:1px solid #f09;*/
 	width:1500px;
-	margin-left:300px;
+	margin:20px;
+	padding-bottom:20px;
 }
 
 #contact #south-america{
@@ -362,8 +356,6 @@ footer #copyright{
 	margin-top:-170px;
 	margin-bottom:100px;
 }
-
-
 
 #contact div{
 	/*border:1px solid #f10;*/
@@ -436,8 +428,54 @@ footer #copyright{
 	width:200px;
 }
 
+/*SITE MAP PAGE*/
+
+#site-map-title{
+	margin-bottom:-20px;
+}
+
+#site-map nav{
+	background-color: #fff;
+}
+
+#site-map h3{
+	margin-left:300px;
+}
+
+#rooms-navigation h3{
+	padding-top: 25px;
+	width:200px;
+}
 
 
+#site-map ul{
+	width:400px;
+	/*border:1px solid #f09;*/
+	margin-top:-30px;
+}
+
+#rooms-navigation a,
+#conference-navigation a,
+#contact-navigation a{
+	text-decoration: none;
+	color:#171821;
+}
+
+
+#site-map li{
+	width:300px;
+	/*border: 1px solid #f09;*/
+}
+
+#site-map ul li a{
+	background-color: none;
+	color:#171821;
+	text-decoration: none;
+}
+
+#site-map a:hover{
+	color:#a0845e;
+}
 
 
 
