@@ -161,6 +161,16 @@ footer #copyright{
 	margin:35px;
 }
 
+.gallery-images:hover{
+    -webkit-transform:scale(1.8);
+    transform:scale(1.5);
+}
+
+.gallery-images{
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
 #facilities{
 	border-top:10px solid #c92c39;
 	margin-top:-10px;
@@ -234,7 +244,6 @@ footer #copyright{
 #rooms-par div a{
 	margin-left:1250px;
 }
-
 
 .three-col h3,
 .three-col-rooms h3{
@@ -398,7 +407,7 @@ footer #copyright{
 
 #check-dates{
 	background-color:rgba(83,71,64,.2);
-	width:500px;
+	width:700px;
 }
 
 #check-dates h3{
@@ -410,7 +419,7 @@ footer #copyright{
 }
 
 #customer-info{
-	width:500px;
+	width:700px;
 	background-color:rgba(83,71,64,.4);
 	margin-bottom: 100px;
 }
