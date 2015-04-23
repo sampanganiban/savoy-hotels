@@ -89,12 +89,12 @@ form.onsubmit = function() {
 
 	var formIsValid = true;
 	
-	// if(phone.value.length == 0 || email.value.length == 0 || lastNameInput.value.length == 0 || firstNameInput.value.length == 0 ){
-	// 	formMessage.innerHTML = 'You must provide information in all fields';
-	// 	formIsValid = false;
-	// } else{
-	// 	formMessage.innerHTML = '';
-	// }
+	if(phone.value.length == 0 || email.value.length == 0 || lastNameInput.value.length == 0 || firstNameInput.value.length == 0 ){
+		formMessage.innerHTML = 'You must provide information in all fields';
+		formIsValid = false;
+	} else{
+		formMessage.innerHTML = '';
+	}
 
 	if(checkinYear.value == checkoutYear.value) {
 		if(checkinMonth.value == checkoutMonth.value) {
