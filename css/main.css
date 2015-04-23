@@ -386,8 +386,31 @@ footer #copyright{
 
 /*BOOKING FORM*/
 
-#form h2{
-	font-size:40px;
+#form{
+	margin-left: 20px;
+}
+
+#check-dates{
+	border-top:10px solid #c92c39;
+	background-color:rgba(83,71,64,.2);
+/*	border:1px solid #f09;*/
+	width:400px;
+	padding:30px;
+}
+
+#customer-info{
+	border-top:10px solid #c92c39;
+	padding:30px;
+	/*border:1px solid #f09;*/
+	margin-left: 463px;
+	margin-top: -303px;
+	margin-bottom: 100px;
+	width:300px;
+	background-color:rgba(83,71,64,.2);
+}
+
+.form-title{
+	color:#c92c39;
 }
 
 #booking-form label{
@@ -405,11 +428,6 @@ footer #copyright{
 	border-radius: 5px;
 }
 
-#check-dates{
-	background-color:rgba(83,71,64,.2);
-	width:700px;
-}
-
 #check-dates h3{
 	font-size:20px;
 }
@@ -418,18 +436,16 @@ footer #copyright{
 	width:50px;
 }
 
-#customer-info{
-	width:700px;
-	background-color:rgba(83,71,64,.4);
-	margin-bottom: 100px;
+#room-selection{
+	display: inline;
 }
+
+
+
+
 
 #people label{
-	display:block;
-}
-
-#people input{
-	display: inline;
+	width:60px;
 }
 
 #checkbox label{
