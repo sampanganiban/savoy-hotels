@@ -44,13 +44,16 @@
 
 
  <div id="form">   
-  <h2>Booking Form</h2>
+
 
   <form novalidate action="success.html" id="booking-form">
  
   <div id="check-dates">
+
+    <h3 class="form-title">RESERVATION DATES</h3>
+
     <div>
-      <h3>CHECK IN</h3>
+      <h4>CHECK IN</h4>
       <label for="checkin-day">Day: </label>
       <select id="checkin-day">
         <option>1</option>
@@ -114,7 +117,7 @@
     </div>
 
       <div>
-        <h3>CHECK OUT</h3>
+        <h4>CHECK OUT</h4>
         <label for="checkout-day">Day: </label>
         <select id="checkout-day">
           <option>1</option>
@@ -173,54 +176,54 @@
         <option>2016</option>
         <option>2017</option>
         <option>2018</option>
-      </select><br><br>
+      </select>
+
+      <span id="checkout-message"></span>
     </div>
 
   </div>
 
   <div id="customer-info">
+  <h3 class="form-title">CUSTOMER INFORMATION</h3>
+  <div id="room-selection">
     <div>
-      <label for="first-name">First Name</label>
+      <input type="radio" name="room" value="Standard room" id="standard-room-button">
+      <label for="standard-room-button">STANDARD ROOM</label>
+    </div>
+    
+    <div>
+      <input type="radio" name="room" value="Superior room" id="superior-room-button">
+      <label for="superior-room-button">SUPERIOR ROOM</label>
+    </div>
+    
+    <div>
+      <input type="radio" name="room" value="Penthouse Suite" id="penthouse-suite-button">
+      <label for="penthouse-suite-button">PENTHOUSE SUITE</label>
+      <span id="room-message"></span>
+    </div>
+
+    <div>
+      <label for="first-name">First Name:</label>
       <input type="text" id="first-name" placeholder="John">
       <span id="firstname-message"></span>
     </div>
 
     <div>
-      <label for="last-name">Last Name</label>
+      <label for="last-name">Last Name:</label>
       <input type="text" id="last-name" placeholder="Smith">
       <span id="lastname-message"></span>
     </div>
-
-    <div>
-      <label>Age:</label>
-      <input type="date" id="age">
-    </div>
-
-    <div>
-      <input type="radio" name="gender" value="male" id="gender-male">
-      <label for="gender-male">Male</label>
-    </div>
-    
-    <div>
-      <input type="radio" name="gender" value="female" id="gender-female">
-      <label for="gender-female">Female</label>
-    </div>
-    
-    <div>
-      <input type="radio" name="gender" value="other" id="gender-other">
-      <label for="gender-other">Other</label>
-      <span id="gender-message"></span>
-    </div>
+  </div>
 
      <div id="people">
-      <label for="adults">Adults</label>
+      <label for="adults">Adults: </label>
       <select id="adults">
         <option></option>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
-      </select>
-      <label for="children">Children</label>
+      </select><span id="guest-message"></span>
+      <label for="children">Children: </label>
       <select id="children">
         <option></option>
         <option value="0">0</option>
@@ -229,10 +232,11 @@
         <option value="3">3</option>
         <option value="4">4</option>
       </select>
+
     </div>
 
     <div>
-      <label for="email">Email Address</label>
+      <label for="email">Email Address:</label>
       <input type="email" id="email" placeholder="example@email.com">
       <span id="email-message"></span>
     </div>
@@ -250,6 +254,7 @@
     </div>
 
     <input type="submit" value="Book your room" id="submit">
+    <span id="form-message"></span>
   </div>
 
     
