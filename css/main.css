@@ -394,7 +394,7 @@ footer #copyright{
 	border-top:10px solid #c92c39;
 	background-color:rgba(83,71,64,.2);
 /*	border:1px solid #f09;*/
-	width:400px;
+	width:500px;
 	padding:30px;
 }
 
@@ -402,10 +402,10 @@ footer #copyright{
 	border-top:10px solid #c92c39;
 	padding:30px;
 	/*border:1px solid #f09;*/
-	margin-left: 463px;
+	margin-left: 600px;
 	margin-top: -303px;
 	margin-bottom: 100px;
-	width:300px;
+	width:600px;
 	background-color:rgba(83,71,64,.2);
 }
 
