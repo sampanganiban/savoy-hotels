@@ -45,6 +45,7 @@ function validateField(el) {
 
 	// find this element's match error div.
 	var errorDiv = document.querySelector("#" + el.id + "-error");
+	console.log(errorDiv);
 	if (errorDiv === null) {
 		throw new Error("could not find error element to match #" + el.id, el);
 	}
