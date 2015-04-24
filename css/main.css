@@ -390,23 +390,22 @@ footer #copyright{
 	margin-left: 20px;
 }
 
-#check-dates{
+#check-dates, 
+#customer-info{
 	border-top:10px solid #c92c39;
-	background-color:rgba(83,71,64,.2);
-/*	border:1px solid #f09;*/
+	background-color:#171821;
 	width:500px;
 	padding:30px;
+	color:#fff;
 }
 
 #customer-info{
 	border-top:10px solid #c92c39;
 	padding:30px;
-	/*border:1px solid #f09;*/
 	margin-left: 600px;
 	margin-top: -303px;
 	margin-bottom: 100px;
 	width:600px;
-	background-color:rgba(83,71,64,.2);
 }
 
 .form-title{
@@ -415,8 +414,9 @@ footer #copyright{
 
 #booking-form label{
 	display:inline-block;
-	width:150px;
+	width:130px;
 	font-size:15px;
+	/*border:1px solid #f09;*/
 }
 
 #submit{
@@ -426,6 +426,7 @@ footer #copyright{
 	border-style: none;
 	color:#fff;
 	border-radius: 5px;
+	margin:10px 0px 0px 450px;
 }
 
 #check-dates h3{
@@ -438,19 +439,20 @@ footer #copyright{
 
 #room-selection{
 	display: inline;
+	margin:10px;
 }
 
-
-
-
-
 #people label{
-	width:60px;
+	width:130px;
 }
 
 #checkbox label{
-	/*border:1px solid #f09;*/
+	margin-top:20px;
 	width:200px;
+}
+
+span{
+	color:#c92c39;
 }
 
 /*SITE MAP PAGE*/
@@ -493,7 +495,6 @@ footer #copyright{
 }
 
 #site-map ul li a{
-	background-color: none;
 	color:#171821;
 	text-decoration: none;
 }
