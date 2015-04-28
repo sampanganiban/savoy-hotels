@@ -1,6 +1,6 @@
 body{
 	font:16px/1.5 'PT Sans', sans-serif;
-	background-color: #444;
+	margin:0;
 }
 
 #container{
@@ -228,7 +228,6 @@ footer #copyright{
 	margin:0;
 	border-top:10px solid #c92c39;
 	padding:25px;
-/*	border:2px solid #f09;*/
 	clear:both;
 	background-color: rgba(83,71,64,.2);
 }
@@ -390,22 +389,27 @@ footer #copyright{
 	margin-left: 20px;
 }
 
-#check-dates, 
+/*#check-dates, 
 #customer-info{
 	border-top:10px solid #c92c39;
 	background-color:#171821;
-	width:500px;
+	width:300px;
 	padding:30px;
 	color:#fff;
+}*/
+
+#check-dates,
+#customer-info{
+	border-top:10px solid #c92c39;
+	background-color:#171821;
+	padding:30px;
+	width:300px;
 }
 
 #customer-info{
-	border-top:10px solid #c92c39;
-	padding:30px;
-	margin-left: 600px;
-	margin-top: -303px;
-	margin-bottom: 100px;
-	width:600px;
+	width:400px;
+	margin-left: 400px;
+	margin-top: -397px;
 }
 
 .form-title{
@@ -416,7 +420,6 @@ footer #copyright{
 	display:inline-block;
 	width:130px;
 	font-size:15px;
-	/*border:1px solid #f09;*/
 }
 
 #submit{
@@ -426,7 +429,7 @@ footer #copyright{
 	border-style: none;
 	color:#fff;
 	border-radius: 5px;
-	margin:10px 0px 0px 450px;
+	margin:20px 0px 0px 250px;
 }
 
 #check-dates h3{
@@ -438,8 +441,8 @@ footer #copyright{
 }
 
 #room-selection{
-	display: inline;
-	margin:10px;
+	display:inline; 
+	margin:5px;
 }
 
 #people label{
@@ -451,9 +454,32 @@ footer #copyright{
 	width:200px;
 }
 
-span{
-	color:#c92c39;
+#form label{
+	color:#fff;
 }
+
+#form div{
+	color:#c92c39;
+
+}
+
+#agree label{
+	width:240px;
+}
+
+#agree-error,
+#phone-error,
+#email-error,
+#adults-error,
+#children-error,
+#lastname-error,
+#firstname-error{
+
+}
+
+
+
+
 
 /*SITE MAP PAGE*/
 
@@ -503,6 +529,12 @@ span{
 	color:#a0845e;
 }
 
+
+/*SUCCESS PAGE*/
+
+#success{
+	padding:30px;
+}
 
 
 
