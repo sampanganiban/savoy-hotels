@@ -44,89 +44,17 @@
   <main class="clearfix">
 
 
-<div id="form">   
-
-
-  <form method="POST" novalidate action="success.html" id="booking-form">
+  <div id="form">   
+    <form method="POST" novalidate action="success.html" id="booking-form">
  
-  <div id="check-dates">
+    <div id="check-dates">
 
-    <h3 class="form-title">RESERVATION DATES</h3>
-
-    <div>
-      <h4>CHECK IN</h4>
-      <label for="checkin-day">Day: </label>
-      <select id="checkin-day">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-        <option>7</option>
-        <option>8</option>
-        <option>9</option>
-        <option>10</option>
-        <option>11</option>
-        <option>12</option>
-        <option>13</option>
-        <option>14</option>
-        <option>15</option>
-        <option>16</option>
-        <option>17</option>
-        <option>18</option>
-        <option>19</option>
-        <option>20</option>
-        <option>21</option>
-        <option>22</option>
-        <option>23</option>
-        <option>24</option>
-        <option>25</option>
-        <option>26</option>
-        <option>27</option>
-        <option>28</option>
-        <option>29</option>
-        <option>30</option>
-        <option>31</option>
-      </select>
-      
-
-      <div id="checkin-day-error"></div>
-
-      <label for="checkin-month">Month: </label>
-      <select id="checkin-month">
-        <option value="1">January</option>
-        <option value="2">February</option>
-        <option value="3">March</option>
-        <option value="4">April</option>
-        <option value="5">May</option>
-        <option value="6">June</option>
-        <option value="7">July</option>
-        <option value="8">August</option>
-        <option value="9">September</option>
-        <option value="10">October</option>
-        <option value="11">November</option>
-        <option value="12">December</option>
-      </select>
-
-    <div id="checkin-month-error"></div>
-
-      <label for="checkin-year">Year: </label>
-      <select id="checkin-year">
-        <option>2015</option>
-        <option>2016</option>
-        <option>2017</option>
-        <option>2018</option>
-      </select>
-
-      <div id="checkin-year-error"></div>
-
-    </div>
+      <h3 class="form-title">RESERVATION DATES</h3>
 
       <div>
-        <h4>CHECK OUT</h4>
-        <label for="checkout-day">Day: </label>
-        <select id="checkout-day">
+        <h4>CHECK IN</h4>
+        <label for="checkin-day">Day: </label>
+        <select id="checkin-day">
           <option>1</option>
           <option>2</option>
           <option>3</option>
@@ -159,11 +87,12 @@
           <option>30</option>
           <option>31</option>
         </select>
+        
 
-      <div id="checkout-day-error"></div>
+        <div id="checkin-day-error"></div>
 
-        <label for="checkout-month">Month: </label>
-        <select id="checkout-month">
+        <label for="checkin-month">Month: </label>
+        <select id="checkin-month">
           <option value="1">January</option>
           <option value="2">February</option>
           <option value="3">March</option>
@@ -178,21 +107,90 @@
           <option value="12">December</option>
         </select>
 
-        <div id="checkout-month-error"></div>
-    
-        
-      <label for="checkout-year">Year: </label>
-      <select id="checkout-year">
-        <option>2015</option>
-        <option>2016</option>
-        <option>2017</option>
-        <option>2018</option>
-      </select>
+      <div id="checkin-month-error"></div>
 
-      <div id="checkout-year-error"></div>
-    </div>
+        <label for="checkin-year">Year: </label>
+        <select id="checkin-year">
+          <option>2015</option>
+          <option>2016</option>
+          <option>2017</option>
+          <option>2018</option>
+        </select>
 
-  </div> 
+        <div id="checkin-year-error"></div>
+
+      </div>
+
+        <div>
+          <h4>CHECK OUT</h4>
+          <label for="checkout-day">Day: </label>
+          <select id="checkout-day">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+            <option>31</option>
+          </select>
+
+        <div id="checkout-day-error"></div>
+
+          <label for="checkout-month">Month: </label>
+          <select id="checkout-month">
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+
+          <div id="checkout-month-error"></div>
+      
+          
+        <label for="checkout-year">Year: </label>
+        <select id="checkout-year">
+          <option>2015</option>
+          <option>2016</option>
+          <option>2017</option>
+          <option>2018</option>
+        </select>
+
+        <div id="checkout-year-error"></div>
+      </div>
+
+    </div> 
 
   <div id="customer-info">
   <h3 class="form-title">CUSTOMER INFORMATION</h3>
@@ -205,26 +203,26 @@
     </div>
     
     <div>
-     <input type="radio" value="Superior room" name="rooms" id="superior-button"required>
+     <input type="radio" value="Superior room" name="rooms" id="superior-button" required>
      <label for="superior-button">SUPERIOR ROOM</label>
      <div id="superior-button-error"></div>
     </div>
     
     <div>
-      <input type="radio" value="Penthouse Suite" name="rooms" id="penthouse-button"checked>
+      <input type="radio" value="Penthouse Suite" name="rooms" id="penthouse-button" checked>
       <label for="penthouse-button">PENTHOUSE SUITE</label>
       <div id="penthouse-button-error"></div>
     </div>
   </div>
 
   <div> 
-    <label for="firstname">First Name</label>
+    <label for="firstname">First Name:</label>
     <input id="firstname" name="firstname" type="text" placeholder="John" required class="fv-minlength-2">
     <div id="firstname-error"></div>
   </div>
 
   <div>
-    <label for="lastname">Last Name</label>
+    <label for="lastname">Last Name:</label>
     <input id="lastname" name="lastname" type="text" placeholder="Smith" required class="fv-minlength-2">
     <div id="lastname-error"></div>
   </div>
@@ -251,7 +249,7 @@
   </div>
 
   <div class="form-group">
-    <label for="email">Email</label>
+    <label for="email">Email:</label>
     <input id="email" name="email" type="email" placeholder="example@email.com" required>
     <div id="email-error"></div>
   </div>
@@ -262,17 +260,17 @@
     <div id="phone-error"></div>
   </div>
 
-  <div id="agree">
-    <input id="agree" name="agree" type="checkbox" required>
+  <div id="agree-checkbox">
     <label for="agree">I agree to the terms and conditions</label>
+    <input id="agree" name="agree" type="checkbox" required>
     <div id="agree-error"></div>
   </div>
 
     <input type="submit" value="Book your room" id="submit">
   </div>
 
+  </form>
   </div>
-  </form> 
 </main>
 
   <footer class="clearfix">
@@ -288,6 +286,7 @@
   </footer>
 
 </div>
+
 
 <script src="js/form-validation-kit.js"></script>
 <script>
