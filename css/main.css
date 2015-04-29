@@ -1,6 +1,7 @@
 body{
 	font:16px/1.5 'PT Sans', sans-serif;
 	margin:0;
+	background-color:#000;
 }
 
 #container{
@@ -148,13 +149,13 @@ footer #copyright{
 	font-size:30px;
 	margin:0;
 	padding:0;
+	color:#fff;
 }
 
 #gallery{
 	border-top:10px solid #c92c39;
-/*	border:1px solid #f09;*/
 	padding:20px;
-	background-color:rgba(83,71,64,.2);
+	background-color:#171821;
 }
 
 #gallery img{
@@ -229,7 +230,12 @@ footer #copyright{
 	border-top:10px solid #c92c39;
 	padding:25px;
 	clear:both;
-	background-color: rgba(83,71,64,.2);
+	color:rgba(255,255,255,.5);
+	background-color: #171821;
+}
+
+#savoy-intro h2{
+	color:#fff;
 }
 
 
@@ -269,7 +275,6 @@ footer #copyright{
 
 .three-col-rooms a,
 .three-col a{
-/*	font-weight:lighter;*/
 	background-color: #c92c39;
 	color:#171821;
 	margin:10px;
@@ -292,12 +297,10 @@ footer #copyright{
 .article1,
 .article2,
 .article3{
-	/*border-top:10px solid #c92c39;*/
 	width:466.5px;
 	float:left;
 	background-color: #171821;
 	color:#fff;
-	/*margin-top:15px;*/
 	padding:0px 14px 25px 20px;
 	font-size: 12px;
 }
@@ -322,7 +325,6 @@ footer #copyright{
 .article2 p,
 .article3 p{
 	font-size: 14px;
-	/*border:1px solid #f09;*/
 	margin-bottom: 40px;
 	color:rgba(255,255,255,.6);
 }
@@ -346,7 +348,6 @@ footer #copyright{
 /*CONTACT PAGE*/
 #contact{
 	margin:30px;
-	/*border:1px solid #f09;*/
 	width:1500px;
 	margin:20px;
 	padding-bottom:20px;
@@ -366,7 +367,6 @@ footer #copyright{
 }
 
 #contact div{
-	/*border:1px solid #f10;*/
 	width:520px;
 	color:#171821;
 	float:left;
@@ -389,27 +389,18 @@ footer #copyright{
 	margin-left: 20px;
 }
 
-/*#check-dates, 
-#customer-info{
-	border-top:10px solid #c92c39;
-	background-color:#171821;
-	width:300px;
-	padding:30px;
-	color:#fff;
-}*/
-
 #check-dates,
 #customer-info{
 	border-top:10px solid #c92c39;
 	background-color:#171821;
-	padding:30px;
+	padding:25px;
 	width:300px;
 }
 
 #customer-info{
 	width:400px;
 	margin-left: 400px;
-	margin-top: -397px;
+	margin-top: -460px;
 }
 
 .form-title{
@@ -463,6 +454,39 @@ footer #copyright{
 
 }
 
+#firstname,
+#lastname,
+#email,
+#phone,
+#adults,
+#children,
+#checkout-day,
+#checkin-day,
+#checkout-month,
+#checkin-month,
+#checkout-year,
+#checkin-year{
+	background-color: rgba(255,255,255,.4);
+	border-style: none;
+	padding:5px;
+	width: 170px;
+	margin:5px;
+}
+
+#adults,
+#children,
+#checkout-day,
+#checkin-day,
+#checkout-month,
+#checkin-month,
+#checkout-year,
+#checkin-year{
+	width:70px;
+	color:rgba(255,255,255,.4);
+}
+
+
+
 #agree label{
 	width:240px;
 }
@@ -474,14 +498,22 @@ footer #copyright{
 #children-error,
 #lastname-error,
 #firstname-error{
+	background-color: rgba(83,70,63,.5);
+	width:200px;
+}
 
+#agree-error{
+	width:150px;
 }
 
 
 
 
-
 /*SITE MAP PAGE*/
+
+#site-map{
+	margin-left:20px;
+}
 
 #site-map-title{
 	margin-bottom:-20px;
@@ -489,10 +521,6 @@ footer #copyright{
 
 #site-map nav{
 	background-color: #fff;
-}
-
-#site-map h3{
-	margin-left:300px;
 }
 
 #rooms-navigation h3{
@@ -503,8 +531,9 @@ footer #copyright{
 
 #site-map ul{
 	width:400px;
-	/*border:1px solid #f09;*/
 	margin-top:-30px;
+	margin-left: 0;
+	margin-bottom: -5px;
 }
 
 #rooms-navigation a,
@@ -514,19 +543,17 @@ footer #copyright{
 	color:#171821;
 }
 
-
 #site-map li{
 	width:300px;
-	/*border: 1px solid #f09;*/
 }
 
 #site-map ul li a{
-	color:#171821;
+	color:#c92c39;
 	text-decoration: none;
 }
 
 #site-map a:hover{
-	color:#a0845e;
+	color:#53463f;
 }
 
 
