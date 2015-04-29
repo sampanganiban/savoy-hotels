@@ -44,7 +44,7 @@
   <main class="clearfix">
 
 
- <div id="form">   
+<div id="form">   
 
 
   <form method="POST" novalidate action="success.html" id="booking-form">
@@ -89,8 +89,8 @@
         <option>30</option>
         <option>31</option>
       </select>
-
-      <span id="checkin-day-error"></span>
+      
+      <div id="checkin-day-error"></div>
 
       <label for="checkin-month">Month: </label>
       <select id="checkin-month">
@@ -108,7 +108,7 @@
         <option value="12">December</option>
       </select>
 
-    <span id="checkin-month-error"></span>
+    <div id="checkin-month-error"></div>
 
       <label for="checkin-year">Year: </label>
       <select id="checkin-year">
@@ -118,7 +118,8 @@
         <option>2018</option>
       </select>
 
-      <span id="checkin-year-error"></span>
+      <div id="checkin-year-error"></div>
+
     </div>
 
       <div>
@@ -158,7 +159,7 @@
           <option>31</option>
         </select>
 
-      <span id="checkout-day-error"></span>
+      <div id="checkout-day-error"></div>
 
         <label for="checkout-month">Month: </label>
         <select id="checkout-month">
@@ -176,7 +177,7 @@
           <option value="12">December</option>
         </select>
 
-        <span id="checkin-month-message"></span>
+        <div id="checkout-month-error"></div>
     
         
       <label for="checkout-year">Year: </label>
@@ -187,91 +188,86 @@
         <option>2018</option>
       </select>
 
-      <span id="checkout-month-message"></span>
+      <div id="checkout-year-error"></div>
     </div>
 
-  </div>
+  </div> 
 
   <div id="customer-info">
-    <h3 class="form-title">CUSTOMER INFORMATION</h3>
+  <h3 class="form-title">CUSTOMER INFORMATION</h3>
 
-   <div id="room-selection"> 
+  <div id="room-selection"> 
     <div>
-      <input type="radio" value="Standard room" name="rooms" id="standard-room-button" required>
-      <label for="standard-room-button">STANDARD ROOM</label>
+     <input type="radio" value="Standard room" name="rooms" id="standard-button" required>
+     <label for="standard-button">STANDARD ROOM</label>
+     <div id="standard-button-error"></div>
     </div>
     
     <div>
-      <input type="radio" value="Superior room" name="rooms" id="superior-room-button" required>
-      <label for="superior-room-button">SUPERIOR ROOM</label>
+     <input type="radio" value="Superior room" name="rooms" id="superior-button"required>
+     <label for="superior-button">SUPERIOR ROOM</label>
+     <div id="superior-button-error"></div>
     </div>
     
     <div>
-      <input type="radio" value="Penthouse Suite" name="rooms" id="penthouse-suite-button" required>
-      <label for="penthouse-suite-button">PENTHOUSE SUITE</label>
-      <span id="room-message"></span>
+      <input type="radio" value="Penthouse Suite" name="rooms" id="penthouse-button"checked>
+      <label for="penthouse-button">PENTHOUSE SUITE</label>
+      <div id="penthouse-button-error"></div>
     </div>
   </div>
 
-    <div class="form-group">
-      <label for="first-name">First Name:</label>
-      <input type="text" id="first-name" class="fv-minlength-2 hello" placeholder="John" required>
-      <span id="first-name-error" class="danger"></span>
-    </div>
+  <div> 
+    <label for="firstname">First Name</label>
+    <input id="firstname" name="firstname" type="text" placeholder="John" required class="fv-minlength-2">
+    <div id="firstname-error"></div>
+  </div>
 
-    <div class="form-group">
-      <label for="last-name">Last Name:</label>
-      <input type="text" id="last-name" class="fv-minlength-2 hello" placeholder="Smith" required>
-      <span id="last-name-error"></span>
-    </div>
-  
+  <div>
+    <label for="lastname">Last Name</label>
+    <input id="lastname" name="lastname" type="text" placeholder="Smith" required class="fv-minlength-2">
+    <div id="lastname-error"></div>
+  </div>
 
-     <div id="people">
-      <label for="adults">Adults: </label>
-      <select id="adults" required>
-        <option value="0">Select</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-      </select><span id="guest-message"></span>
-     <div class="children">
-      <label for="children">Children: </label>
-      <select id="children" required>
-        <option value="0">Select</option>
-        <option value="1">0</option>
-        <option value="2">1</option>
-        <option value="3">2</option>
-        <option value="4">3</option>
-        <option value="5">4</option>
-      </select>
-     </div>
-     </div>
+  <div id="people">
+    <label for="adults">Adults: </label>
+    <select id="adults" required>
+      <option value="">Select</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select><div id="adults-error"></div>
+   <div class="children">
+    <label for="children">Children: </label>
+    <select id="children" required>
+      <option value="">Select</option>
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select><div id="children-error"></div>
+   </div>
+  </div>
 
-    <div class="form-group">
-      <label for="email">Email Address:</label>
-      <input id="email" name="email" type="email" placeholder="example@email.com" required>
-      
-      <span id="email-message"></span>
-      
-      <div id="email-error" class="danger"></div>
-    
-    </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" placeholder="example@email.com" required>
+    <div id="email-error"></div>
+  </div>
 
-    <div>  
-      <label for="phone">Phone Number:</label>
-      <input type="tel" name="phone-number" required placeholder="+64 123 678" id="phone">
-      <span id="phone-message"></span>
-    </div>
+  <div>  
+    <label for="phone">Phone Number:</label>
+    <input type="tel" name="phone-number" required placeholder="04 123 678" id="phone">
+    <div id="phone-error"></div>
+  </div>
 
-    <div id="checkbox">
-      <label for="terms-and-conditions" >Agree to terms &amp; conditions: </label>
-      <input type="checkbox" id="terms-and-conditions" required>
-      <span id="terms-message"></span>
-    </div>
-  
+  <div id="agree">
+    <input id="agree" name="agree" type="checkbox" required>
+    <label for="agree">I agree to the terms and conditions</label>
+    <div id="agree-error"></div>
+  </div>
 
     <input type="submit" value="Book your room" id="submit">
-    <span id="form-message"></span> 
   </div>
 
   </div>
