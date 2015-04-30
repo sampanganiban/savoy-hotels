@@ -51,14 +51,17 @@ header nav{
 }
 
 nav ul{
-	/*border:1px solid #fff;*/
 	margin-left:300px;
-	width:550px;
 	padding:20px;
 }
 
+header nav ul{
+	width:1000px;
+	display:inline-block;
+}
+
 nav li{
-	width:125px;
+	width:150px;
 	display:inline-block;
 }
 
@@ -76,7 +79,7 @@ nav a{
 }
 
 nav a{
-	font-size:13px;
+	font-size:15px;
 }
 
 nav a:hover{
@@ -93,24 +96,29 @@ footer{
 }
 
 footer nav{
-	width:250px;
-	/*border:1px solid #f09;*/
+	width:280px;
 	margin-bottom:15px;
 	margin-top:-42px;
-	margin-left:1240px;
+	margin-left:1233px;
 }
 
 footer #copyright{
 	margin-left:30px;
-	/*border:1px solid #f09;*/
 }
+
+.book a{
+	padding:5px;
+	border:5px solid #c92c39;
+	font-weight:bold;
+	width:400px;
+}
+
 
 
 /*Home*/
 #search-bar{
 	margin-top:190px;
 	padding-bottom: 200px;
-	/*border:1px solid #f09;*/
 }
 
 #countrySelection{
@@ -190,7 +198,7 @@ footer #copyright{
 }
 
 #facilities div{
-	width:550px;
+	width:500px;
 	float:left;
 	padding:10px;
 	/*border:1px solid #f09;*/
@@ -232,29 +240,35 @@ footer #copyright{
 	clear:both;
 	color:rgba(255,255,255,.5);
 	background-color: #171821;
+	width:1450px;
 }
 
 #savoy-intro h2{
 	color:#fff;
 }
 
+.home-paragraph{
+	width:400px;
+	margin:5px;
+	padding:10px;
+	float:left; 
+}
+
+#home-con{
+	padding-left:15px;
+	margin-left: 85px;
+}
+
+#home-rooms{
+	margin-left: 50px;
+}
 
 /*ROOMS PAGE*/
-
-#rooms-par{
-	padding:30px;
-	width:1400px;
-}
-
-#rooms-par div a{
-	margin-left:1250px;
-}
 
 .three-col h3,
 .three-col-rooms h3{
 	font-size:26px;
 	font-weight:lighter;
-	/*border:1px solid #fff;*/
 	margin:7px 0px 7px 0px;
 	padding:0;
 	padding-top: 5px;
@@ -262,8 +276,14 @@ footer #copyright{
 	border-top:12px solid #c92c39;
 }
 
-#rooms-par a,
-#con-par a,
+.three-col h3{
+	width:450px;
+	padding-bottom:10px;
+	border-top:12px solid #c92c39;
+}
+
+#home-con a,
+#home-rooms a,
 .three-col-rooms a,
 .three-col a{
 	padding:8px;
@@ -273,6 +293,8 @@ footer #copyright{
 	font-weight:bold;	
 }
 
+#home-con a,
+#home-rooms a,
 .three-col-rooms a,
 .three-col a{
 	background-color: #c92c39;
@@ -286,8 +308,8 @@ footer #copyright{
 	margin:0;
 }
 
-#rooms-par a:hover,
-#con-par a:hover,
+#home-con a:hover,
+#home-rooms a:hover,
 .three-col a:hover,
 .three-col-rooms a:hover{
 	border: 3px solid #a0845e;
@@ -327,22 +349,6 @@ footer #copyright{
 	font-size: 14px;
 	margin-bottom: 40px;
 	color:rgba(255,255,255,.6);
-}
-
-/*CONFERENCE ROOMS PAGE*/
-#con-par{
-	padding:30px;
-	width:1400px;
-}
-
-#con-par div{
-	margin-top:25px;
-	margin-left:680px;
-}
-
-#con-par div a{
-	margin-left:450px;
-
 }
 
 /*CONTACT PAGE*/
@@ -386,7 +392,7 @@ footer #copyright{
 /*BOOKING FORM*/
 
 #form{
-	margin-left: 20px;
+	margin-left: 300px;
 }
 
 #check-dates,
@@ -432,8 +438,12 @@ footer #copyright{
 }
 
 #room-selection{
-	display:inline; 
+	display:inline-block; 
 	margin:5px;
+}
+
+#room-selection label{
+	width:200px;
 }
 
 #people label{
@@ -506,8 +516,11 @@ footer #copyright{
 	width:150px;
 }
 
-
-
+#customer-info-con{
+	width:500px;
+	margin-left:900px;
+	margin-top:-560px;
+}
 
 /*SITE MAP PAGE*/
 
@@ -561,6 +574,47 @@ footer #copyright{
 
 #success{
 	padding:30px;
+}
+
+#success a{
+	text-decoration: none;
+	color:#c92c39;
+}
+
+#success a:hover{
+	color:#53463f;
+}
+
+@media print{
+
+footer,nav{
+ 	display:none;
+}
+
+.page-title{
+	font-size:50px;
+	color:#000;
+	text-shadow:none;
+	margin:0;
+}
+
+#contact h3,
+#contact h2{
+	font-size:20px;
+	font-family:'PT Sans', sans-serif;
+	font-weight:lighter;
+}
+
+#search-bar{
+	display: none;
+}
+
+.article1 a,
+.article2 a,
+.article3 a{
+	display:none;
+}
+
 }
 
 
